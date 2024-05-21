@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Assigment</title>
+</head>
+<body>
+    <script>
+        // Task 1
+        let time = () => {
+        var now = new Date()
+        console.log(now);
+        }
+        time()
+
+        // Task 2
+        let greet = (first , last) => {
+            var final = first + ' ' + last 
+            console.log(final);
+        }
+        greet(prompt('Enter first name') , prompt('Enter last name'));
+
+        // Task 3
+        function sum(a, b, operation){
+         switch (operation){
+        case '+':
+        return a + b;
+        case '-': 
+        return a - b;
+        case '*':
+        return a * b;
+        case '/':
+        return a / b;
+        default:
+         return 'Invalid operation';
+         }
+        }
+
+        // Task 4
+        function sqar (a){
+         console.log(`Square of ${a} = ${a * a} `);
+        }
+        sqar(+prompt('Enter Number Square'))
+
+        // Task 5
+        function start (start , End){
+        for(var i = start; i < End;i++)
+        console.log(i);
+        }
+        start(+prompt('Enter Start Number'), +prompt('Enter End Number'));
+
+        // Task 6
+        let size = (width , height) => width * height;
+        var area = size (3,6)
+        console.log('Area of Triangle = '+area);
+
+        
+    </script>
+</body>
+</html>
